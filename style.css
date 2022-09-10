@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Header Section */
+header{
+    background-color: #262626;
+    color: white;
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header button{
+    background-color: #EB5757;
+    padding: 5px 30px;
+    line-height: 1.5rem;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+nav{
+    background-color: #EB5757;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+}
+.right-side,.right-side .menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .4s;
+}
+.menu a:hover{
+    background-color: #262626;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+/* Header ends here */
+
+/* Section 1 */
+
+.sec-1{
+    height: 81vh;
+    /* border: 1px solid black; */
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)) ,url("./background_image.jpg");
+    background-position: center;   
+    background-size: cover;
+}
+.main_bar{
+    width: 80%;
+    margin: 0px auto;
+    padding: 100px 0px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main_bar p,.main_bar h1{
+    width: 290px;
+    color: white;
+}
+.main_bar h1{
+    font-size: 2.5rem
+}
+.main_bar button,.footer-main button{
+    padding: 10px;
+    background: transparent;
+    color: white ;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid white;transition: all.6s;
+}
+.main_bar button:hover{
+    background-color: #262626;
+    border: none;
+
+}
+/* Section 1 */
+
+
+/* Section 2 */
+
+.section2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0px;
+}
+.section2-right-side{
+    max-width: 500px;
+    
+}
+.section2-left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section2-left-side p{
+    font-size: 1rem;
+}
+.section2-left-side h3{
+    font-size: 2rem;
+}
+/* Section 2 */
+
+/* section 3 */
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding: 10px;
+    
+}
+.card{
+    max-width: 340px;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    gap: 90px;
+    color: white;
+    
+    height: 300px;
+    align-items: center;
+}
+.card-con{
+    display: flex;
+    max-width: 340px;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-between;
+}
+.card h2{
+    align-self: flex-start;
+    padding: 10px 40px;
+}
+
+
+.shape{
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+}
+
+/* section 3 */
+
+/* Footer */
+    .footer
+    {
+        background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),url("./forest.jpeg");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        padding-top: 100px;
+        
+      
+    }
+
+    .footer-main
+    {   height: 40vh;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .footer-main >*{
+        color: white;
+    }
+    .footer-main h1{
+        max-width: 350px;
+        font-size: 1.7rem;
+    }
+    .footer-main p{
+        max-width: 500px;
+        font-size: 1.4rem;
+    }
+    
+
+/* Footer */
+
+
+
+@media (max-width:600px) {
+    *{
+
+    }
+    header{
+        flex-direction: column;
+    }
+
+    .right-side{
+        display: none;
+    }
+    .sec-1{
+        height: 72vh;
+    }
+    .footer-main{
+        align-items: center;
+        height: 60vh;
+    }
+    .section2{
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        margin: auto;
+    }
+}
